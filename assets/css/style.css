@@ -166,7 +166,7 @@ a:focus {
 
 .navbar-default .navbar-toggle > .icon-bar { background-color: #d9534f; }
 
-.navbar-default .navbar-brand { color: #d9534f; }
+.navbar-default .navbar-brand { color: #d9534f; margin-top: -15px; }
 
 .navbar-default .navbar-brand:hover { color: #d9534f; }
 
@@ -231,7 +231,7 @@ a:focus {
 /* Header Wrap */
 
 .headerwrap {
-	background: url("../img/header-bg.jpg") no-repeat center top;
+	background: url("../img/header-bgred.jpg") no-repeat center top;
 	background-size: cover;
 	padding-top: 80px;
 }
@@ -318,7 +318,7 @@ a:focus {
 /* Divider 1 & 2 Wrap */
 
 .divider01 {
-	background: url("../img/divider-1.jpg") no-repeat center center;
+	background: url("../img/divider-1red.jpg") no-repeat center center;
 	background-size: cover;
 	max-height: 350px;
 	padding: 40px;
