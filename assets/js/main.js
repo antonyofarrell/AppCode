@@ -1,5 +1,24 @@
 jQuery(document).ready(function() {
 
+  $('.dummy').viewportChecker();
+
+ jQuery('.featureswrap > .container > .row > .col-lg-6.LeftAnimate').addClass("hideme").viewportChecker({
+classToAdd: 'visible animated fadeInRight',
+offset: 100
+});
+ jQuery('.featureswrap > .container > .row > .col-lg-6.RightAnimate').addClass("hideme").viewportChecker({
+classToAdd: 'visible animated fadeInLeft',
+offset: 100
+});
+ jQuery('.featureswrap2 > .container > .row > .col-lg-6.LeftAnimate').addClass("hideme").viewportChecker({
+classToAdd: 'visible animated fadeInRight',
+offset: 100
+});
+ jQuery('.featureswrap2 > .container > .row > .col-lg-6.RightAnimate').addClass("hideme").viewportChecker({
+classToAdd: 'visible animated fadeInLeft',
+offset: 100
+});
+
   // Active links
   var sections = $("section"),
   navigation_links = $("#navigation a");

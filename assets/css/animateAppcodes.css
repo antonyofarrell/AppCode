@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.navbar-brand {
+  -vendor-animation-duration: 10s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: 3;
+
+  -webkit-animation-duration: 10s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 3;
+}
