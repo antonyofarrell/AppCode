@@ -140,6 +140,22 @@ a:focus {
 
 .btn-theme3:active { outline: 0; }
 
+.btn-theme4 {
+	border-color: #d9534f;
+	background-color: #fff;
+	color: #d9534f;
+}
+
+.btn-theme4:hover {
+	border-color: #d9534f;
+	background-color: #06979e;
+	color: #fff;
+	box-shadow: none;
+}
+
+.btn-theme4:active { outline: 0; }
+
+
 /* ---------------------------------------------------------------------
  * Navigation
 --------------------------------------------------------------------- */
@@ -186,7 +202,7 @@ a:focus {
 
 .navbar-default .navbar-brand:hover { color: #d9534f; }
 
-.navbar-default .navbar-nav > li > a { color: #d9534f; }
+.navbar-default .navbar-nav > li > a { color: #4A4A4A; }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -282,7 +298,7 @@ a:focus {
 	color: #fff;
 }
 
-	.headerwrap a[type="button"] { margin-bottom: 15px; margin-right: 15px;}
+	.headerwrap a[type="button"] { margin-bottom: 40px; margin-right: 15px; padding: 20px 100px;}
 
 @media (max-width: 480px) {
 	.headerwrap h1 { font-size: 50px; }
@@ -414,6 +430,16 @@ padding-bottom: 5px;
 }
 
 
+.divider04 a[type="button"] { margin-bottom: 40px; margin-right: 15px; margin-top: 30px; padding: 20px 100px;}
+
+#tutorials{
+	background-color: #FCFCFC;
+}
+
+#maintutorial {
+  width: 399px;
+  height: 338px;
+}
 /* Pricing Wrap */
 
 .pricingwrap {
