@@ -89,3 +89,11 @@ offset: 100
   }
 
 });
+
+//modal image viewer
+$(function() {
+    $('.pop').on('click', function() {
+      $('.imagepreview').attr('src', $('.pop img').attr('src'));
+      $('#imagemodal').modal('show');   
+    });   
+});
