@@ -115,7 +115,7 @@ a:focus {
 }
 
 .btn-theme2:hover {
-	border-color: #fff;
+	border-color: #414040;
 	background-color: transparent;
 	color: ##414040;
 	box-shadow: none;
@@ -263,7 +263,7 @@ a:focus {
 /* Header Wrap */
 
 .headerwrap {
-	background: url("../img/abstract5.jpg") no-repeat center top;
+	background: url("../img/abstract3.jpg") no-repeat center top;
 	background-size: cover;
 	padding-top: 80px;
 }
@@ -295,8 +295,8 @@ a:focus {
 
 .headerwrap p {
 	text-align: left;
-	color: #414040;
-	font-weight: bold;
+	color: #000000;
+
 }
 
 	.headerwrap a[type="button"] { margin-bottom: 40px; margin-right: 15px; padding: 20px 100px;}
@@ -573,6 +573,21 @@ padding-bottom: 5px;
 	display: block;
 	color: #06979e;
 }
+
+
+/* ---------------------------------------------------------------------
+ * Registration page styles
+--------------------------------------------------------------------- */
+
+
+#registerForm{margin-top: 50px;}
+#registerForm .form-control{height:43px;}
+.tutIframe{margin-top: 18px;}
+.moreInfo{margin-top: 40px;}
+.moreInfo ol{ list-style: none none outside; padding-left: 0px;}
+.moreInfo li{padding: 10px; font-size: 21px;}
+
+
 
 /* ---------------------------------------------------------------------
  * viewportchecker classes to remove elements before animating them in

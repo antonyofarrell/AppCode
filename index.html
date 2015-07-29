@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta name="google-site-verification" content="fNnW2NuredCOfO84bvcZuEWvUiVVPPuR-SANviqCC8A" />
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,8 +59,9 @@
 					</ul>
 
 					<!-- Sign In / Sign Up -->
+
 					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown"><a href="http://www.appcodes.com/register/"><span class="icon-lock"></span> Register</a></li>
+						<li class="dropdown"><a href="#signin" data-toggle="modal" data-target=".bs-modal-md"><span class="icon-lock"></span> Log In</a></li>
 						<div class="navbar-form pull-left">
 							<a href="http://www.appcodes.com/demologin/" type="button" class="btn btn-sm btn-theme">Free Trial</a>
 						</div>
@@ -70,58 +72,66 @@
 
 
 		<!-- Sign In / Sign Up Modal -->
-		<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-sm">
+		<div class="modal fade bs-modal-md" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-md">
 				<div class="modal-content">
 					<br>
 					<div class="bs-example bs-example-tabs">
 						<ul id="myTab" class="nav nav-tabs nav-justified">
-							<li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-							<li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+							<li class="active"><a href="#signin" data-toggle="tab">Log in</a></li>
+							<li class=""><a href="#signup" data-toggle="tab">Free Trial</a></li>
 						</ul>
 					</div>
 					<div class="modal-body">
 						<div id="myTabContent" class="tab-content">
 							<!-- Sign In Form -->
 							<div class="tab-pane fade active in" id="signin">
-								<form class="form-horizontal">
-									<fieldset>
-										<!-- Text input-->
-										<div class="control-group">
-											<label class="control-label" for="Email">Email:</label>
-											<div class="controls">
-												<input id="Email" name="Email" class="form-control input-large" type="text" placeholder="Your email address" required>
-											</div>
-										</div>
+								<form class="form-horizontal form-register" role="form" method="POST" action="/register" style="margin-top:20px">
+	  <h2 style="margin-bottom:30px;">Register for AppCodes</h2>
+	  <div>
+	    <font color="red"></font>
+	  </div>
+	  <div class="form-group">
+		<div class="col-md-8" style="width:100%; height:100%;">
+		  <input id="emailInput" name="email" type="text" class="form-control" placeholder="E-mail">
+		</div>
+	  </div>
+	  <div class="form-group">
+		<div class="col-md-8" style="width:100%; height:100%;">
+		  <input name="pass" type="password" class="form-control" placeholder="Password">
+		</div>
+	  </div>
+	  <div class="form-group">
+		<div class="col-md-8" style="width:100%; height:100%;">
+		  <input name="pass2" type="password" class="form-control" placeholder="Repeat password">
+		</div>
+	  </div>
 
-										<!-- Password input-->
-										<div class="control-group">
-											<label class="control-label" for="passwordinput">Password:</label>
-											<div class="controls">
-												<input required id="passwordinput" name="passwordinput" class="form-control input-medium" type="password" placeholder="********">
-											</div>
-										</div>
+	  <div class="form-group">
+		<div class="col-md-7">Plan: <b>$14.95 / month</b><br><i>with 14-day money back guarantee</i></div>
+<div class="col-md-5" id="freeClick" style="text-align:right"><a href="#" onclick="$('#freeDiv').show(); $('#freeClick').hide(); return false;" style="
+    text-decoration: underline; color: #5cb85c;
+">Why no free version?</a></div>
+	  </div>
 
-										<!-- Multiple Checkboxes (inline) -->
-										<div class="control-group">
-											<label class="control-label" for="rememberme"></label>
-											<div class="controls">
-												<label class="checkbox-inline" for="rememberme-0">
-													<input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
-													Remember me
-												</label>
-											</div>
-										</div>
+	  <div class="form-group" hidden="" id="freeDiv">
+		  <div class="col-md-8" style="width:100%; margin-top:-15px">
+		<p>We're geared towards small, indie devs. If we gave you guys free accounts, we'd have to switch our focus to bigger companies &amp; enterprise.</p><p> So please - check out the tutorial on the right to see if we're a right fit for you. There's also <a href="http://www.appcodes.com/demologin/" style="color: #5cb85c">a demo</a> that you can check out. Or sign up knowing that you can get a refund within 14 days. So far less than 1% of users asked for one. That says something.</p></div>
+		</div>
 
-										<!-- Button -->
-										<div class="control-group">
-											<label class="control-label" for="signin"></label>
-											<div class="controls">
-												<button id="signin" name="signin" class="btn btn-theme btn-block">Sign In</button>
-											</div>
-										</div>
-									</fieldset>
-								</form>
+	  <div class="form-group" hidden="" id="promoDiv">
+		<div class="col-md-8" style="width:100%;">
+		  <input id="promoInput" name="comment" type="text" class="form-control" placeholder="Promo Code">
+		</div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-md-8" style="width:100%;">
+		  <button type="submit" class="btn btn-success btn-lg" style="width:100%; text-align:left;" onclick="return validate();" value="Register">
+		    Register with PayPal
+		  </button>
+		</div>
+	  </div>
+	</form>
 							</div><!-- /signin -->
 
 							<!-- Sign Up Form -->
@@ -695,7 +705,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10">
-						<p>Copyright &copy;2015 AppCodes. All Rights Reserved.</p>
+						<p>© Motivapps 2012-15. AppCodes - The Swiss Army Knife for iPhone App Marketing</p>
 					</div>
 					<div class="col-lg-2">
 						<p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Legal</a></p>
@@ -721,6 +731,26 @@
 				interval: 3500,
 				pause: "none"
 			})
+		</script>
+
+		<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29143015-1']);
+		
+		_gaq.push(['_setDomainName', 'appcodes.com']);
+		
+		_gaq.push(['_trackPageview']);
+
+		
+		
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
 		</script>
 	</body>
 </html>

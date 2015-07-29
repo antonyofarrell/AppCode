@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="google-site-verification" content="fNnW2NuredCOfO84bvcZuEWvUiVVPPuR-SANviqCC8A" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A tool for indie devs wanting to improve their iPhone and iPad app marketing / App Store SEO. We also can predict your future store search position and guess your competitors' keywords.">
+		<title>AppCodes - App Store SEO + iPhone and iPad app marketing</title>
+		<meta name="keywords" content="">
+		<meta name="author" content="Tomasz Kolinko">
+		<link href="assets/img/favicon.png" rel="shortcut icon" >
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- Plugins -->
+		<link href="assets/css/social-icons.css" rel="stylesheet">
+		<link href="assets/css/icomoon.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+		<!-- Animations -->
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/animateAppcodes.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="assets/js/modernizr.custom.js"></script>
+	</head>
+
+	<body data-spy="scroll" data-offset="0" data-target="#navigation">
+
+		<!-- Fixed navbar -->
+		<nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="assets/img/appcodes-logo150.png" alt=""><!-- <span class="icon-stack"></span> <b>BOOTSTACK</b> --></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="navbar-collapse collapse" id="bs-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/" class="smoothScroll">Home</a></li>
+						
+					</ul>
+
+					<!-- Sign In / Sign Up -->
+
+					<ul class="nav navbar-nav navbar-right">
+						
+						<div class="navbar-form pull-left">
+							<a href="http://www.appcodes.com/demologin/" type="button" class="btn btn-sm btn-theme">Free Trial</a>
+						</div>
+					</ul>
+				</div><!--/nav-collapse -->
+			</div><!-- /container -->
+		</nav><!-- /fixed-navbar -->
+
+
+		
+
+
+
+
+
+
+
+		
+
+<section id="registerForm">
+			<div>
+				<div class="container">
+					<div class="row">
+						<h1 style="margin-bottom:30px; text-align:center;">Register for AppCodes</h2>
+						<hr>
+						<div class="col-lg-7">
+							<form class="form-horizontal form-register" role="form" method="POST" action="/register" style="margin-top:20px">
+								
+								<div>
+									<font color="red"></font>
+								</div>
+								<div class="form-group">
+									<div class="col-md-8" style="width:100%; height:100%;">
+										<input id="emailInput" name="email" type="text" class="form-control" placeholder="E-mail">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-8" style="width:100%; height:100%;">
+										<input name="pass" type="password" class="form-control" placeholder="Password">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-8" style="width:100%; height:100%;">
+										<input name="pass2" type="password" class="form-control" placeholder="Repeat password">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-7">Plan: <b>$14.95 / month</b><br><i>with 14-day money back guarantee</i></div>
+									<div class="col-md-5" id="freeClick" style="text-align:right"><a href="#" onclick="$('#freeDiv').show(); $('#freeClick').hide(); return false;" style="
+										text-decoration: underline; color: #5cb85c;
+										">Why no free version?</a></div>
+									</div>
+
+									<div class="form-group" hidden="" id="freeDiv">
+										<div class="col-md-8" style="width:100%; margin-top:-15px">
+											<p>We're geared towards small, indie devs. If we gave you guys free accounts, we'd have to switch our focus to bigger companies &amp; enterprise.</p><p> So please - check out the tutorial on the right to see if we're a right fit for you. There's also <a href="http://www.appcodes.com/demologin/" style="color: #5cb85c">a demo</a> that you can check out. Or sign up knowing that you can get a refund within 14 days. So far less than 1% of users asked for one. That says something.</p></div>
+										</div>
+
+										<div class="form-group" hidden="" id="promoDiv" style="display: block;">
+											<div class="col-md-8" style="width:100%;">
+												<input id="promoInput" name="comment" type="text" class="form-control" placeholder="Promo Code">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-md-8" style="width:100%;">
+												<button type="submit" class="btn btn-success btn-lg" style="width:100%; text-align:left;" onclick="return validate();" value="Register">
+													Register with PayPal
+												</button>
+											</div>
+										</div>
+									</form>
+						</div>
+
+						<div class="col-lg-5 tutIframe">
+							<iframe id="maintutorial" src="http://www.slideshare.net/slideshow/embed_code/11535165" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="float:right; border: 1px solid #DFE1E1;"></iframe>
+                            
+						</div>
+
+                        
+
+
+					
+					<br><br><br>
+				</div><!-- /container -->
+			</div><!-- /tutorials -->
+		</section>
+
+<div class="moreInfo">
+			<div class="container">
+				<div class="row jumbotron">
+					
+					<h2 style="margin-left:20px;">More Info</h3>
+					<ol>
+						<li>
+							$14.95/month. <b>14-day money-back guarantee</b>.
+						</li>
+						<li>
+							Track 200 phrases across unlimited number of apps.
+						</li>
+						<li>
+							Easy cancel - any time.
+						</li>
+						<li>
+							Your data <b>remains private</b>. <a class="accordion-toggle" href="#collapseData" data-toggle="collapse" data-parrent=".accordion">(Learn more <span class="icon-paragraph-left"></span>)</a>
+							<div id="collapseData" class="more-window panel-collapse collapse">
+								<p>Unless you give us your explicit permission, only the account holder can access the data, we do not read it, we do not publish it, we do not use it to aid other service users.</p>
+								<p>
+									By "your data" we mean
+								</p><ul>
+								<li>your app ids, keywords, names, search phrases, competitors</li>
+								<li>things that you type in into the search box</li>
+								<li>any other iformation we might ask you to provide</li>
+							</ul>
+							<p></p>
+							<p>
+								By "aid other service users" we mean
+							</p><ul>
+							<li>if you discover a cool new word/phrase that we didn't already know, we won't suggest it to your competitors</li>
+							<li>we have a function that guesses your competitors' keywords - we only use publicly available data for that</li>
+							<li>other, similar scenarios</li>
+						</ul>
+						<p></p>
+						<p>
+							Your other data, like <b>your e-mail and name</b>, can be used for customer support purposes only. We don't share this data with anyone.
+						</p>
+						<p>
+							Limited liability - we do not guarantee that the data won't be stolen or lost. We promise that we'll use industry-standard means of data protection.
+						</p>
+						<p>
+							Any questions, let us know at <a href="mailto:support@appcod.es">support@appcod.es</a>. This privacy statement is valid for all accounts registered after April 6th 2012.
+						</p>
+					</div>
+				</li>
+				<li>
+					Full support: iPhone&amp;iPad in <b>U.S., Canada, Australia, U.K</b>
+				</li>
+				<li>
+					Limited support: iPhone&amp;iPad in <b>all the other countries</b> <a class="accordion-toggle" href="#collapseStores" data-toggle="collapse" data-parrent=".accordion">(Learn more)</a>
+					<div id="collapseStores" class="more-window panel-collapse collapse">
+						<p>
+							Limited support has:
+						</p><ul>
+						<li>Tracking app position for search queries</li>
+						<li>Predicting app's position (in beta in Japan/China)</li>
+					</ul>
+					<p></p>
+					<p>
+						Missing:
+					</p><ul>
+					<li>Guessing competitor keywords</li>
+					<li>Tracking competitors</li>
+				</ul>
+				<p></p>
+				<p>
+					We think the tracking alone is worth the price, but if you decide it's not enough - remember that you can get a refund within 14 days.
+				</p>
+			</div>
+		</li>
+		<li>
+			"Publisher plan" - 1k phrases for $145/mo <a href="mailto:support@appcodes.com">also available</a>
+		</li>
+	</ol>
+				</div>
+                
+            
+			</div>
+		</div><!-- /divider04 -->
+
+
+		
+        <section id="contact">
+        			<div class="footerwrap">
+        				<div class="container">
+        					<div class="row">
+        						<div class="col-lg-8">
+        							<h3>About Appcodes</h3>
+        							<img class="img-responsive right" src="assets/img/kolinko-face.jpg" alt="">
+        							<br>
+									<p> My name is Tomasz Kolinko. I'm the lead developer in AppCodes, and also the founder of Motivapps.com - iOS Development company, started in 2010.<br/>
+
+									As indie developers, we never had too much money to invest into the PR actions for our iOS apps. Like most beginning developers, we put our apps out there, and just hoped for the best. And of course, like most of the beginning developers, we earned almost nothing. <br/>
+									</p>
+                                    <p><span class="icon-location"></span> Some Address 373, Palo Alto, CA <br/>
+                                        <span class="icon-phone"></span> (800) 373-7733 <br/>
+                                        <span class="icon-envelope"></span> <a href="mailto:support@bootstacktheme.com">support@bootstacktheme.com</a>
+                                    </p>
+									
+        						</div>
+                                <div class="col-lg-4">
+                                    <h3>Contact Us</h3>
+                                    <br>
+                                    <div class="row">
+
+                                        <form>
+                                            
+                                            <div class="col-xs-12">
+                                                <label>Email Address</label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <input type="text" class="" placeholder="Your email address">
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label>Message</label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <textarea name="message" id="message" class="input-xlarge" rows="5"></textarea>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <button type="submit" class="btn btn-primary">Send</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+		
+
+
+		<!-- Copyright Wrap -->
+		<div class="copywrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10">
+						<p>© Motivapps 2012-15. AppCodes - The Swiss Army Knife for iPhone App Marketing</p>
+					</div>
+					<div class="col-lg-2">
+						<p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Legal</a></p>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /copywrap (copyright) -->
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="assets/js/jquery-2.1.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!--<script src="assets/js/bootstrap.min.js"></script> -->
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<script src="assets/js/detectmobilebrowser.js"></script>
+		<script src="assets/js/smoothscroll.js"></script>
+		<script src="assets/js/waypoints.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.viewportchecker.min.js"></script>
+		<script>
+			$('.carousel').carousel({
+				interval: 3500,
+				pause: "none"
+			})
+		</script>
+
+		<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29143015-1']);
+
+		_gaq.push(['_setDomainName', 'appcodes.com']);
+
+		_gaq.push(['_trackPageview']);
+
+
+
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		</script>
+	</body>
+</html>
