@@ -109,7 +109,7 @@ a:focus {
 .btn-theme:focus { outline: 0; }
 
 .btn-theme2 {
-	border-color: #d9534f;
+	border-color: #414040;
 	background-color: #fff;
 	color: #414040;
 }
@@ -364,20 +364,30 @@ a:focus {
 #quotes {
 	background: url("../img/divider-1red.jpg") no-repeat center center;
 	background-size: cover;
-	height: 250px;
 	padding: 40px;
 }
 
 #quotes h3 {
-	font-size: 34px;
+	font-size: 18px;
 	color: #fff;
+	padding-bottom: 60px;
+	margin-top: -10px;
 }
 
 #quotes h4 {
-	padding-top: 15px;
+	padding-top: 1px;
 	color: #fff;
+	margin-bottom: 10px;
+	font-weight: bold;
 }
-
+#quotes hr{
+	width: 70%;
+	margin-top: 1px;
+}
+.avatar{
+border-radius: 50%;
+border: 3px solid white;
+}
 .divider02 {
 	background-color: #f5f5f5;
 	padding-top: 55px;
@@ -404,7 +414,6 @@ padding-bottom: 5px;
 }
 
 @media (max-width: 480px) {
-	#quotes { max-height: 375px; }
 
 	#quotes .carousel-inner { padding: 0; }
 

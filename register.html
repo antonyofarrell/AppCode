@@ -119,7 +119,7 @@
 											<p>We're geared towards small, indie devs. If we gave you guys free accounts, we'd have to switch our focus to bigger companies &amp; enterprise.</p><p> So please - check out the tutorial on the right to see if we're a right fit for you. There's also <a href="http://www.appcodes.com/demologin/" style="color: #5cb85c">a demo</a> that you can check out. Or sign up knowing that you can get a refund within 14 days. So far less than 1% of users asked for one. That says something.</p></div>
 										</div>
 
-										<div class="form-group" hidden="" id="promoDiv" style="display: block;">
+										<div class="form-group" hidden id="promoDiv">
 											<div class="col-md-8" style="width:100%;">
 												<input id="promoInput" name="comment" type="text" class="form-control" placeholder="Promo Code">
 											</div>
@@ -131,6 +131,11 @@
 												</button>
 											</div>
 										</div>
+										<div id="promoClick" style="text-decoration: underline;">
+										<a id="promoClickA" href="#" onclick="$('#promoDiv').show(); $('#promoClick').hide(); return false;" style="color: #888;">
+											Press? Click to enter a promo code.
+										</a>
+									</div>
 									</form>
 						</div>
 
@@ -198,7 +203,7 @@
 					Full support: iPhone&amp;iPad in <b>U.S., Canada, Australia, U.K</b>
 				</li>
 				<li>
-					Limited support: iPhone&amp;iPad in <b>all the other countries</b> <a class="accordion-toggle" href="#collapseStores" data-toggle="collapse" data-parrent=".accordion">(Learn more)</a>
+					Limited support: iPhone&amp;iPad in <b>all the other countries</b> <a class="accordion-toggle" href="#collapseStores" data-toggle="collapse" data-parrent=".accordion">(Learn more <span class="icon-paragraph-left"></span>)</a>
 					<div id="collapseStores" class="more-window panel-collapse collapse">
 						<p>
 							Limited support has:
